@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta charset="utf-8" />
+<title>Project 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="slick/slick.css">
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+
+<link rel="stylesheet" type="text/css" href="selectivity/selectivity-full.css">
+
+
+
+<link rel="stylesheet" type="text/css" href="css/main-min.css"/>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+    $(".padLista").hide();
+    $(".padListaShow").on("click", function(event){
+    event.stopPropagation();
+    $(".padLista").toggle();
+    });
+    $('html').click(function() {
+    $(".padLista").hide();
+});
+});
+</script>
+
+   
+</head>
+
+<body>
+	<div class="header">
+		<div class="colCenter">
+		
+			<a href="index.html"><img src="img/logo_no_back.png" alt="logo slika"/></a>
+			<ul class="desno sakrij">
+				<li><a href="#">Pocetna</a></li>
+				<li><a href="#">O bazi</a></li>
+				<li><a href="#">Aktuelnosti</a></li>
+				<li><a href="#">Kontakt</a></li>
+			</ul>
+            <div class="filter desno">
+            <div class="padLista">
+                <a href="#">Pocetna</a>
+                <a href="#">O bazi</a>
+                <a href="#">Aktuelnosti</a>
+                <a href="#">Kontakt</a>
+            </div>
+            <button class="padListaShow" onclick="showHide()"><i class="fa fa-bars"></i></button>
+        </div>
+
+    </div>
+	</div>
+ 
+   
+	<div class="slider">
+		<div><img src="img/rotator_slika.jpg"/></div>
+		<div><img src="img/rotator_slika.jpg"/></div>
+	</div>
+	 <div class="blackPar">
+        <div class="colCenter">
+	 	<div class="civil">
+	 		<div class="lijevo verticalAlign">
+                    <input type="search" placeholder="Pronadji instituciju"/>
+                    <select id="single-select-box" class="selectivity-input" data-placeholder="Kategorija institucije" name="traditional[single]" single>
+            <option>Kategorija institucije</option>
+            <option>Drustvene institucije</option>
+            <option>Institucije Evropse unije</option>
+            <option>Institucije Crne Gore</option>
+            <option>Institucije vlasti</option> 
+        </select>
+             
+                     <select id="multiple-select-box" class="selectivity-input" data-placeholder="Type to search cities" name="traditional[multiple]" multiple>
+                         <optgroup label="Montenegro">
+                    <option value="80" data-timezone="+00:00">Podgorica</option>
+                    <option value="81" data-timezone="+00:00">Cetinje</option>
+                    <option value="82" data-timezone="+00:00">Niksic</option>
+                    <option value="83" data-timezone="+00:00">Budva</option>
+                </optgroup>
+                <optgroup label="Austria">
+                    <option value="54" data-timezone="+01:00">Vienna</option>
+                </optgroup>
+                <optgroup label="Croatia">
+                    <option value="58" data-timezone="+01:00">Zagreb</option>
+                </optgroup>
+                <optgroup label="Czech Republic">
+                    <option value="42" data-timezone="+01:00">Prague</option>
+                </optgroup>
+                <optgroup label="Denmark">
+                    <option value="13" data-timezone="+01:00">Copenhagen</option>
+                </optgroup>
+                <optgroup label="England">
+                    <option value="6" data-timezone="+00:00">Birmingham</option>
+                    <option value="7" data-timezone="+00:00">Bradford</option>
+                    <option value="26" data-timezone="+00:00">Leeds</option>
+                    <option value="30" data-timezone="+00:00">London</option>
+                </optgroup>
+                <optgroup label="Finland">
+                    <option value="25" data-timezone="+02:00">Helsinki</option>
+                </optgroup>
+                <optgroup label="France">
+                    <option value="35" data-timezone="+01:00">Marseille</option>
+                    <option value="40" data-timezone="+01:00">Paris</option>
+                </optgroup>
+                <optgroup label="Italy">
+                    <option value="20" data-timezone="+01:00">Genoa</option>
+                    <option value="36" data-timezone="+01:00">Milan</option>
+                    <option value="38" data-timezone="+01:00">Naples</option>
+                    <option value="39" data-timezone="+01:00">Palermo</option>
+                </optgroup>
+                <optgroup label="Latvia">
+                    <option value="43" data-timezone="+02:00">Riga</option>
+                </optgroup>
+                <optgroup label="Lithuania">
+                    <option value="55" data-timezone="+02:00">Vilnius</option>
+                </optgroup>
+                <optgroup label="Netherlands">
+                    <option value="1" data-timezone="+01:00">Amsterdam</option>
+                    <option value="45" data-timezone="+01:00">Rotterdam</option>
+                    <option value="51" data-timezone="+01:00">The Hague</option>
+                </optgroup>
+                <optgroup label="Poland">
+                    <option value="29" data-timezone="+01:00">Łódź</option>
+                    <option value="31" data-timezone="+01:00">Kraków</option>
+                    <option value="41" data-timezone="+01:00">Poznań</option>
+                </optgroup>
+                <optgroup label="Sweden">
+                    <option value="22" data-timezone="+01:00">Gothenburg</option>
+                    <option value="49" data-timezone="+01:00">Stockholm</option>
+                </optgroup>
+            </select>
+            
+
+
+                    <input type="submit" value="Search"/>
+               
+
+
+                </div>
+
+	 		<img src="img/smallCivil.png" alt="slika civil"/></div></div>
+	 	<div class="contain"></div>
+    </div>
+
+    <div class="colCenter">
+    	
+    	<div style="bottom: 300px;">
+    		<p class="paragraf1">I civilno drustvo</p>
+    		<p class="paragraf2">odlucuje!</p>
+    	</div>
+    	
+    </div>
+
+    <div>
+        <div class="containerWhole">
+            <div class="back">
+            <h1>Nesto o <span>bazi</span></h1>
+            <p>Lorem ipsum dolor sit amet, iisque qualisque in sit. Mutat viris adipisci eos ut, mel et alii quidam disputando. </p>
+            <img src="img/paragraf_prvi.jpg" alt="slika paragraf 1"/>
+        </div>
+         <div class="back goDo">
+            <h1>Kontaktirajte <span>nas</span></h1>
+            <p>Lorem ipsum dolor sit amet, iisque qualisque in sit. Mutat viris adipisci eos ut. </p>
+            <img src="img/paragraf_drugi.jpg" alt="slika paragraf 2"/>
+        </div>
+
+        <div class="backer">
+            <h1>Zadnje <span>Aktuelnosti</span></h1>
+            <ul>
+                <li><a>I civilno drustvo odlucuje! Moras znati da se ti pitas i sam odlucujes !</a></li>
+                <li class="active"><a>Lorem ipsum dolor sit amet, iisque qualisque in sit. Mutat viris adipisci eos ut.</a></li>
+            </ul>
+            <div class="input">Pogledaj sve aktuelnosti
+                <img src="img/array.jpg" alt="slicica"/></div>
+        </div>
+        </div>
+    </div>
+ 
+
+	<div class="footer">
+        <div class="colCenter">
+		<div class="blue"><p class="lijevo">LYKAN hypersport, simply amazing.</p><p class="desno">Created by BILD STUDIO</p></div>
+    </div>
+	</div>
+
+
+
+	
+
+	<script type="text/javascript" src="slick/slick.js"></script> 
+
+	<script type="text/javascript" src="js/slick.js"></script> <!-- Podesavanje za slick carousel -->
+
+	<script type="text/javascript" src="selectivity/selectivity-full.js"></script>
+
+	<script type="text/javascript" src="js/selectivity.js"></script> <!-- Podesavanje za selectivity -->
+
+  
+
+</body>
+
+
+</html>
+
+

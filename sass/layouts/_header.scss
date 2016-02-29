@@ -1,0 +1,18 @@
+
+
+body{
+	background-image: url('../img/background.jpg');
+	height: 500px;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contain{
+	@extend .col-md-2;
+}
+
+.col-md-8{
+	@extend .col-md-8;
+}
+
+

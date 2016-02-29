@@ -1,0 +1,96 @@
+
+.back {
+  background-color: white;
+  width: 350px;
+  height: 340px;
+  padding: 30px;
+  float: left; 
+  margin-top: -200px;
+
+  p {
+    color: #000099; }
+ 
+  h1 {
+  color: #47D1FF;    
+  
+  span {
+    font-weight: bold; 
+  }
+  }
+  }
+
+ .backer {
+  width: 380px;
+  height: 340px;
+  padding: 20px;
+  float: left; 
+  margin-top: -200px;
+
+
+ h1 {
+  color: #47D1FF; }
+  .backer h1 span {
+    font-weight: bold; }
+
+  ul {
+  display: block;
+  list-style-type: none; 
+  li:nth-child(odd) {
+    color: #000099;
+    background: url(http://s21.postimg.org/pzzb8lxzn/kale1.png) no-repeat 0 0;
+    background-position: -10px;
+    padding-left: 80px;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
+    font-weight: bold; 
+
+    a{
+    position: relative;
+    top: 20px;
+    }}
+
+  li:nth-child(even) {
+    color: #000099;
+    background: url(http://s17.postimg.org/x20vok0fv/kale2.png) no-repeat 0 0;
+    background-position: -10px;
+    padding-left: 80px;
+    padding-bottom: 40px;
+    font-weight: bold; 
+    a{
+    position: relative;
+    top: 20px;
+    }
+    }
+    }
+
+  .input {
+  width: 290px;
+  background-color: #47D1FF;
+  border: none;
+  position: relative;
+  left: 40px;
+  border-radius: 4px;
+  padding: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold; 
+
+  img {
+  float: right;
+  width: 20px;
+  height: 20px; }
+
+  &:hover {
+  background-color: #6CDAFF;
+  transition: 0.5s all;
+  cursor: pointer; }
+  }
+    }
+
+.containerWhole{
+  @extend .container;
+  margin: 0 auto;
+}
+
+
+  

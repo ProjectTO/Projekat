@@ -1,0 +1,60 @@
+
+.header {
+  height: 80px;
+  background-color: white;
+  width: 100%;
+  float: left; }
+  .colCenter ul {
+    list-style-type: none;
+    margin-top: 25px;
+    font-size: 0px; }
+    .colCenter ul li {
+      display: inline-block;
+      padding-left: 40px; }
+      .colCenter ul li a {
+        font-weight: bold;
+        font-size: 18px; }
+      .colCenter ul li a:hover {
+        text-decoration: none;
+        color: black;
+        transition: 0.7s; }
+
+.colCenter {
+  width: 880px;
+  margin: 0 auto; }
+#wrapper{
+	min-height: 100%;
+
+	&::after{
+	content: "";
+	display: block;
+	}
+}
+.filter{
+	display:none;
+}
+
+.padListaShow{
+	background-color: #33479C;
+	border: 1px solid #33479C;
+	border-radius: 8px;
+	padding: {
+	left: 10px;
+	right: 10px;
+	top: 7px;
+	bottom: 5px;
+	} 
+	i{
+	color: white;
+	font-size: 18px;
+	}
+}
+
+.desno{
+	@extend .pull-right;
+}
+
+.lijevo{
+	@extend .pull-left;
+}
+

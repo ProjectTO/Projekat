@@ -1,0 +1,67 @@
+
+.blackPar{
+	width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+	float: left;
+	height: 80px;
+	position: relative;
+	bottom: 541px;
+
+  input[type=search]{
+  float: left;
+  height: 41px;
+  border: 0px;
+  border-radius: 8px 0 0 8px;
+  padding: 7px;
+  }
+
+  input[type=submit]{
+  width: 79px;
+  float:left;
+  border-radius: 0px 8px 8px 0px;
+  color: white;
+  background-color: rgba(123, 200, 239, 1);
+  height: 41px;
+  padding: 7px;
+  border: 0.5px solid transparent;
+  }
+
+  img{
+  position: relative;
+  bottom: 10px;
+  }
+}
+
+.wholeWidth{
+	width:100%;
+}
+
+.verticalAlign{
+  position: relative;
+  top: 20px;
+}
+
+.paragraf1 {
+  padding: 10px;
+  padding-left: 20px;
+  background-color: rgba(51, 71, 156, 0.9);
+  color: white;
+  width: 340px;
+  font-weight: bold;
+  font-size: 40px; 
+  margin-top: -400px;
+
+  }
+
+.paragraf2 {
+  padding: 10px;
+  padding-left: 20px;
+  background-color: rgba(123, 200, 239, 0.9);
+  color: white;
+  width: 240px;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: -10px;
+  }
+
+  
